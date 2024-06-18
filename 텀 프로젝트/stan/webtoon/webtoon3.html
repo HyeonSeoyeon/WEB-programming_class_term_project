@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타학교 - 박병찬, 전영중, 최종수</title>
+    <style>
+        body {
+            color: rgba(34, 50, 58, 0.9);
+            background-color: rgb(207, 227, 255);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        hr {
+            height: 3px;
+            background-color: rgba(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+        header {
+            text-align: center;
+            padding: 1vw 0;
+            background-color: rgba(34, 50, 58, 0.1);
+            margin-top: 3px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        
+
+
+
+        .character-description {
+            opacity: 0;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s;
+            top: calc(50% -50px); /* 중앙 정렬을 위해 상대적인 위치로 설정 */
+            left: calc(50% - 10px); /* 중앙 정렬을 위해 상대적인 위치로 설정 */
+            transform: translate(-50%, -50%); /* 정확한 중앙 정렬 */
+            width: auto; /* 설명 박스의 너비 설정 */
+            text-align: center; /* 텍스트를 가운데 정렬 */
+        }
+
+        .character:hover + .character-description {
+            opacity: 1;
+        }
+        p {
+            font-size: 2vw;
+        }
+        .size {
+            font-size: 1.5vw;
+        }
+        .bold {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <hr>
+    <header>
+        <p class="bold">조형 고등학교  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;원중 고등학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;장도 고등학교<p class="size">(사진 위로 마우스를 올려보세요)</p></p>
+    </header>
+    <br><br>
+
+    
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FFKwuE%2FbtsH1nl0fv8%2FcCuPjnx2B7n6PY0tzWQsQK%2Fimg.png" width="20%" alt="병찬" class="character" style="margin-left: 18vw">
+        <div class="character-description">
+            <p>박병찬 3학년 187cm<br>포지션은 포인트 가드와 슈팅 가드이며 부상으로 2년을 유급했다. 탈고교 수준의 실력을 가지고 있지만 부상 때문에 실력을 발휘하지 못한다.</p>
+        </div>
+
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG06j8%2FbtsH2rOMvRu%2F7x5dQEEHIrZgfBBjsCO3YK%2Fimg.png" width="20%" alt="영중" class="character">
+        <div class="character-description">
+            <p>전영중 3학년 192cm<br>포지션은 스몰 포워드이고, 고교에서 손에 꼽히는 수비력을 가지고 있다. 성준수의 소꿉친구이자 라이벌이다.</p>
+        </div>
+
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FOdAn3%2FbtsH1mObvAn%2Fz3QSKafM930NKMtrnFL3Kk%2Fimg.png" width="25%" alt="종수" class="character">
+        <div class="character-description">
+            <p>최종수 3학년 188cm<br>포지션은 슈팅가드이며 장도고의 주장이자 에이스이다. 작중 가장 농구 실력이 뛰어난 선수이고, 별명도 무려 인간 태풍이다.</p>
+        </div>
+
+        
+
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>왕은 웃었다</title>
+    <style>
+        body {
+            color: rgb(34, 50, 58, 0.9);
+            padding: 0 2vw;
+            background-color: rgb(214, 255, 208);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        hr {
+            height: 3px;
+            background-color: rgb(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+        header {
+            text-align: center;
+            margin-top: 30px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .book-info {
+            text-align: center;
+            margin: 20px auto 40px;
+            font-size: 1.2em;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .book-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        table {
+            width: 60%;
+            margin: 40px auto;
+            border-collapse: collapse;
+        }
+        td {
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+        }
+        td img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            border-radius: 10px;
+        }
+        td img:hover {
+            transform: scale(1.7);
+        }
+        .synopsis, .characters {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .synopsis h2, .characters h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .character {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .character img {
+            width: 30%;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        .character iframe {
+            width: 70%;
+            height: 200px;
+            border: 3px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <hr>
+    <header>
+        <h1>왕은 웃었다</h1>
+    </header>
+    <div class="book-info">
+        <p><strong>장르:</strong> 동양 판타지</p>
+        <p><strong>작가:</strong> 류재빈</p>
+        <p><strong>출판사:</strong> 파피루스</p>
+        <p><strong>연재처:</strong> 카카오페이지, 네이버 시리즈, 리디</p>
+        <p><strong>연재 기간:</strong> 2011. 09. 02. ~ 휴재 중</p>
+    </div>
+    <table>
+        <tr>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqmQ4x%2FbtsH1lIuTXR%2FQt336MkmM4IV3xx5TD8bi0%2Fimg.png" alt="Book Cover 1"></td>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcBm0Yf%2FbtsH1kW7Xyz%2FdM1aQnwkCTxAZ5icntGiX0%2Fimg.png" alt="Book Cover 2"></td>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbulXlY%2FbtsH09uK9c0%2F8lCFtBaFOBkRnKoKGx5DF0%2Fimg.png" alt="Book Cover 3"></td>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fenb4wp%2FbtsH2TDXRJo%2F0ESiVAwygKpnwIYlRZzei0%2Fimg.png" alt="Book Cover 4"></td>
+        </tr>
+        <tr>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbil70R%2FbtsH1NEJwva%2FEcjpvtED8yqPG2OfySslXk%2Fimg.png" alt="Book Cover 5"></td>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdcPBMG%2FbtsH2GZclyp%2FcpKim2dVTW5EiTFuFvJlbk%2Fimg.png" alt="Book Cover 6"></td>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvVXl4%2FbtsH3nEFv1i%2FhJI3DqSkt54ASUQJ8ywpP1%2Fimg.png" alt="Book Cover 7"></td>
+            <td><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdzAGoW%2FbtsH2EAnOM6%2FXhAVqkpDmacYewRN9tEIk1%2Fimg.png" alt="Book Cover 8"></td>
+        </tr>
+    </table>
+    <div class="synopsis">
+        <h2>책 줄거리</h2>
+        <p>라야는 열다섯 소년. 그가 가장 원하는 것은 ‘군석’을 가진 왕의 군위가 되는 것. 그러기 위해 진곡의 공주 첸첸의 군위 후보로 들어가 일 년을 보낸다. 소악마라고 불리는 첸첸의 비위를 맞추며. 하루하루 불안과 혼란을 삭이며 미래에 대해 기대감을 애써 되새기던 그에게 어느 날 첸첸이 노비를 사 주겠다고 한다.<br><br>원치 않는 감정을 숨기고 노비 시장에 간 라야는 그곳에서 이상한 노비 무무를 만난다. 어딘지 세상에 길들여지지 않은 것 같은 노비 무무. 그와 주종 관계를 뛰어넘는 우정을 쌓으며, 이대로도 괜찮지 않을까 하고 생각하게 된 라야.
+            <br><br>
+            한편, 첸첸은 이마의 군석이 익기를 기다리며 점점 라야에 대한 집착을 키워 간다. 세 사람 사이에 묘한 긴장이 흐르고, 그때 궁 안에서 시체가 발견되는데…….<br><br><strong>비를 내릴 수 있는 단 한 사람, 왕.
+            그리고 그 왕을 지키는 군위.
+            군위를 꿈꾸는 소년 라야, 그의 이야기.</strong></p>
+    </div>
+    <div class="characters">
+        <h2>등장인물</h2>
+        <div class="character">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkxWdi%2FbtsH2E8cUau%2Fx5Y9P1VLQ6wf7BKtyscGD0%2Fimg.png" alt="라야">
+            <iframe src="./characters/character1.html"></iframe>
+        </div>
+        <div class="character">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8qC5U%2FbtsH08vSbtU%2FM642mGqAKjp1KbkzS5M9mk%2Fimg.png" alt="무무">
+            <iframe src="./characters/character2.html"></iframe>
+        </div>
+        <div class="character">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FWMMqw%2FbtsH2khPQzc%2F4K2KcKk3TkP1YOOLITfIDk%2Fimg.png" alt="기해">
+            <iframe src="./characters/character3.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
