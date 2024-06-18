@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>룬의 아이들 - 웹소설 소개</title>
+    <style>
+        body {
+            color: rgb(34, 50, 58);
+            background-color: rgb(214, 255, 208);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        hr {
+            height: 3px;
+            background-color: rgba(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+
+        button {
+            position: absolute;
+            top: 2vw;
+            left: 2vw;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        section {
+            margin: 2vw 5vw;
+            padding: 1vw 3vw 1vw 3vw;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 2vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .intro {
+            margin:2vw;
+            font-size: 2vw;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .summary {
+            padding: 0vw 3vw 1vw 3vw;
+        }
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2vw;
+        }
+        .character {
+            position: relative;
+            text-align: center;
+            width: 30%;
+        }
+        .character img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s;
+        }
+        .character .description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 1vw;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1vw;
+            box-sizing: border-box;
+            transition: opacity 0.3s;
+        }
+        .character:hover img {
+            opacity: 0.3;
+        }
+        .character:hover .description {
+            opacity: 1;
+        }
+        .character-name {
+            margin-top: 1vw;
+            font-size: 1.5vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <hr>
+    <button type="button" onclick="location.href='fantasy1.html'">돌아가기</button>
+
+    <header>
+        <h1>룬의 아이들 - 블러디드</h1>
+    </header>
+    
+    <section class="summary">
+        <p style="line-height: 3vw;">
+            <span class="intro">
+                <span class="bold" style="display: block; border-bottom: 3px solid rgba(34, 50, 58, 0.9);">소개글</span><br>
+                오를란느 공녀 이스핀 샤를의 이야기. 사랑하는 오빠를 지키기 위해 엘리트 근위대 '에투알'에 투신한 공녀 샤를로트. 그러나 4년 뒤, 오빠는 흔적 없이 실종된다. 대공이 될 사람은 자신뿐이지만 샤를로트는 계승자 책봉을 미루어 달라 청한다. 오빠를 공격한 자는 돌아올 것이다. 샤를로트가 타고난 위험천만한 능력을 노리고. 그자가 돌아오기 전에 능력을 각성하고, 뛰어난 자들을 한편으로 모아야 한다. 한편 마법학교 네냐플에서의 '술집구석 탐정' 막시민. 그의 소문은 공녀의 흥미를 끌게되는데...            </span>
+        </p>
+    </section>
+
+    <section class="summary">
+        <p style="line-height: 3vw;">
+            <span class="intro">
+                <span class="bold" style="display: block; border-bottom: 3px solid rgba(34, 50, 58, 0.9);">주요 등장인물</span><span style="font-weight: thin;">(사진에 마우스를 올려보세요)</span><br>
+            </span>
+        </p>
+        <div class="characters">
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNB1Tq%2FbtsH2mtccQZ%2FvQJ4Er8tYz3SmT6n00EX01%2Fimg.png" alt="이스핀 샤를">
+                <div class="description">천 년이 넘는 역사를 가진 오를란느 대공국 대공 가문의 공녀. 블러디드라는 기묘한 능력을 다룰 수 있다.</div>
+                <div class="character-name">이스핀 샤를</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHM0i6%2FbtsH3m0dPxu%2FhVfeLCweFirHYGJAmy9aRk%2Fimg.png" alt="막시민 리프크네">
+                <div class="description">이스핀이 오빠를 찾기 위해 고용한 술집 탐정으로 만나 이후 손발이 맞는 친한 동료가 된다.</div>
+                <div class="character-name">막시민 리프크네</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmAUtM%2FbtsH27oyMaq%2FefoIIiEbvf2bS0eORUqkO1%2Fimg.png" alt="로랑 카스티유">
+                <div class="description">사과의 섬에서 샤를로트의 호위를 맡은 것을 계기로 이후 최측근으로 활동한다.</div>
+                <div class="character-name">로랑 카스티유</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkWhDQ%2FbtsH3rAjpcm%2FDYqKdMANSu37VWGFRmPae0%2Fimg.png" alt="엘베리크 쥬스피앙">
+                <div class="description">티치엘 쥬스피앙의 아버지. 작중 마법업계 투신자들은 이름 한번쯤은 반드시 들어봤을 만큼 유명한 마법사.</div>
+                <div class="character-name">엘베리크 쥬스피앙</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdpVXnB%2FbtsH2O3ONYT%2FMv1jijcbgIjnyC1jhovpJK%2Fimg.png" alt="델핀 드 오를란느">
+                <div class="description">샤를로트 비에트리스 드 오를란느의 친어머니이자 샤를로트의 이복 오빠의 계모.</div>
+                <div class="character-name">델핀 드 오를란느</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2vSL2%2FbtsH2GETSOu%2FFOhnLxv2GJchoSsSa7UAWK%2Fimg.png" alt="줄리앙 드 오를란느">
+                <div class="description"> 샤를로트 비에트리스 드 오를란느와 오빠인 베르나르 조프레 드 오를란느의 아버지이자 현 오를란느 대공국의 대공.</div>
+                <div class="character-name">줄리앙 드 오를란느</div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

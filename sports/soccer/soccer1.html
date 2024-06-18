@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구단 소개</title>
+    <style>
+        body {
+            color: rgb(34, 50, 58, 0.9);
+            padding: 0 2vw;
+            background-color: rgb(255, 134, 69);
+            font-family: Arial, sans-serif;
+        }
+        hr {
+            height: 3px;
+            background-color: rgb(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 3em;
+            color: rgb(3, 117, 11);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .info p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .info p span {
+            font-weight: bold;
+            color: rgb(3, 117, 11);
+        }
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 비율의 높이 계산 */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="container">
+        <h1>강원FC</h1>
+        <img src="../../img/soccer/gangwonfc.png" alt="Gangwon FC LOGO" class="logo">
+        <div class="info">
+            <p><span>창단:</span> 2008년 12월 18일</p>
+            <p><span>연고지:</span> 강원특별자치도</p>
+            <p><span>소속 리그:</span> K리그1</p>
+            <p><span>감독:</span> 윤정환</p>
+            <p><span>주장:</span> 한국영</p>
+            <p><span>부주장:</span> 김영빈, 이광연, 황문기</p>
+            <p><span>홈구장:</span> 강릉종합운동장, 춘천송암스포츠타운</p>
+            <p><span>서포터즈:</span> 나르샤</p>
+            <p><span>현재 순위 보기:</p>
+            <div class="iframe-container">
+                <iframe src="https://sports.news.naver.com/kfootball/record/index?category=kleague&year=2024" frameborder="0" scrolling="yes"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
