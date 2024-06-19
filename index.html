@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyun Seoyeon Term Project Page</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family:Georgia, serif
+        }
+        
+        .main_image {
+            position: relative;
+        }
+
+
+
+        /*상단바*/
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5.6vw; 
+            background: rgba(52, 241, 255, 0.2); 
+            text-shadow: 2px 2px 6px gold;
+            z-index: 1;
+        }
+        .home {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            color: white;
+            font-size:3.5vw;
+            text-decoration:none;
+        }
+        .home:hover {
+            text-shadow: 5px 5px 20px skyblue;
+        }
+        .about_me {
+            position: absolute;
+            top: 15%;
+            left: 41%;
+            color: white;
+            font-size:3.5vw; 
+            text-decoration:none;
+        }
+        .about_me:hover {
+            text-shadow: 5px 5px 20px skyblue;
+        }
+        .hobby {
+            position: absolute;
+            top: 15%;
+            left: 80%;
+            color: white;
+            font-size:3.5vw; 
+            text-decoration:none;
+        }
+        .hobby:hover {
+            text-shadow: 5px 5px 20px skyblue;
+        }
+
+
+
+
+        /*HOME*/
+        .welcome-message {
+            position: absolute;
+            top: 18%;
+            left: 55%;
+            transform: translate(-10%, -50%);
+            color: white;
+            font-size: 4vw; 
+            font-weight: 800;
+            text-shadow: 2px 2px 6px rgb(119, 232, 252);
+        }
+        .me2 {
+            position: absolute;
+            top: 6%; 
+            left: 15%; 
+            width: 17%;
+            border-radius: 20%;
+            border: 0.4vw dashed rgb(119, 232, 252);
+        }
+        .me1 {
+            position: absolute;
+            top: 16%; 
+            left: 27%; 
+            width: 17%;
+            border-radius: 20%;
+            border: 0.4vw dashed rgb(119, 232, 252);
+        }
+
+
+
+
+
+        /*ABOUT ME*/
+        .separator {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.0); 
+        }
+        .about {
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            color: white;
+            font-size: 4vw;
+            font-weight: 900;
+            text-shadow: 2px 2px 6px rgb(119, 232, 252);
+            
+        }
+        .me {
+            position: absolute;
+            top: 54%;
+            left: 10%;
+            color: rgb(34, 50, 58);
+            background-color: rgba(183, 238, 250, 0.7);
+            border-radius: 10%;
+            padding: 30px;
+            padding-right: 100px;
+            font-size: 2vw; 
+            font-weight: 500;
+        }
+        .blog:link {
+            color: rgb(34, 50, 58);
+        }
+        .blog:visited {
+            color: rgb(34, 50, 58);
+        }
+        .blog:hover {
+            color: yellow;
+        }
+        .blog:active {
+            color: blue;
+        }
+
+
+
+
+        /*시간표*/
+        .tb {
+            position: absolute;
+            top: 51%;
+            left: 55%;
+            border-collapse: collapse;
+            text-align: center;
+            color: rgb(34, 50, 58);
+            background-color:rgba(255, 255, 255, 0.6);
+            font-size: 1.7vw; 
+            font-weight: 500;
+        }
+        th, td {
+            border: 0.2vw solid rgb(34, 50, 58);
+        }
+        tr {
+            height: 2.4vw; 
+        }
+        td {
+            width: 7vw; 
+        }
+
+        .highlight {
+            background-color: rgba(183, 238, 250, 0.3);
+        }
+
+
+
+
+        /*점핑별*/
+        @keyframes bounce {
+            from, to {
+                bottom: 0%;
+                animation-timing-function: ease-out;
+            }
+            50% {
+                bottom: 100%;
+                
+                animation-timing-function: ease-in;
+            }
+        }
+        .jumping_star {
+            position: absolute;
+            width: 3vw;
+            height: 3vw;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+        }
+        #b1 { 
+            left: 0%;
+            animation-duration: 5s;      
+        }
+        #b2 { 
+            left: 10%;
+            animation-duration: 10s;      
+        }
+        #b3 { 
+            left: 20%;
+            animation-duration: 6s;      
+        }
+        #b4 { 
+            left: 30%;
+            animation-duration: 8s;      
+        }
+        #b5 { 
+            left: 40%;
+            animation-duration: 7s;      
+        }
+        #b6 { 
+            left: 50%;
+            animation-duration: 5s;      
+        }
+        #b7 { 
+            left: 60%;
+            animation-duration: 10s;      
+        }
+        #b8 { 
+            left: 70%;
+            animation-duration: 6s;      
+        }
+        #b9 { 
+            left: 80%;
+            animation-duration: 8s;      
+        }
+        #b10 { 
+            left: 90%;
+            animation-duration: 7s;      
+        }
+        #b11 { 
+            left: 97%;
+            animation-duration: 5s;      
+        }
+
+
+
+        /*푸터*/
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6vw;
+            background: rgb(34, 50, 58, 0.85);
+            color: white;
+            text-align: center;
+            font-size: 1.3vw;
+        }
+
+        .subject {
+            text-decoration: none;
+        }
+        .subject:visited {
+            color: rgb(34, 50, 58);
+        }
+        .subject:link {
+            color: rgb(34, 50, 58);
+        }
+        .subject:hover {
+            color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main_image">
+        <!--배경 사진-->
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2ac63%2FbtsH0cScZct%2FLJcIvgKH79HLUIvdt84BT1%2Fimg.jpg" width="100%" height="100%">
+
+        <!--상단바-->
+        <div class="navbar">
+            <span><a href="index.html" class="home">HOME</a></span>
+            <span><a href="#about_me_section" class="about_me">ABOUT ME</a></span>
+            <span><a href="./hobby/hobby.html" class="hobby">HOBBY</a></span>
+        </div>
+
+
+        <!--환영 메시지-->
+        <div class="welcome-message">
+            현서연의 웹페이지에<br>오신 것을 환영합니다
+        </div>
+        
+        <!--내 사진-->
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcPUE3D%2FbtsH0XUhC3l%2FtGCoUj5yZQs3fnf5OkFD0k%2Fimg.png" class="me2">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkDDlf%2FbtsH14ruIs2%2F6DM9qQDaKX04YUhdMKlZ4k%2Fimg.png" class="me1">
+
+
+        <!--ABOUT ME section-->
+        <div id="about_me_section" class="separator"></div>
+
+        <span class="about">ABOUT ME</span>
+        <div class="me" style="font-weight: bold;">
+            NAME: 현서연<br>
+            UNIVERSITY: 가천대학교<br>
+            STUDENT ID: 202334773<br>
+            MAJOR: 컴퓨터공학과<br>
+            MBTI: ISTJ<br>
+            BIRTH: 2004.01.05<br>
+            HOME: 강원도 강릉시<br>
+            EMAIL: tjdus4429@gachon.ac.kr<br>
+            BLOG: <a href="https://mehyun.tistory.com/" class="blog" target="_blank">https://mehyun.tistory.com</a>
+        </div>
+
+
+        <!--시간표-->
+        <table class="tb"> 
+            <caption style="background-color: rgba(183, 238, 250, 0.6); font-weight: bold;">&lt;2-1학기 시간표&gt;</caption> 
+            <caption style="background-color: rgba(183, 238, 250, 0.6); font-weight: bold;">시간표 속 각 과목명을 눌러 문제를 풀어보세요!</caption> 
+
+            <tr>
+                <th></th> 
+                <th>M</th>
+                <th>T</th>
+                <th>W</th>
+                <th>T</th>
+                <th>F</th>
+            </tr>
+
+            <tr>
+                <th>9</th>
+                <td></td>
+                <td rowspan="3" class="highlight"><a href="./subject/subject3.html" class="subject">웹프로<br>그래밍</a></td>
+                <td></td>
+                <td rowspan="9" class="highlight">공강</td>
+                <td rowspan="3" class="highlight"><a href="./subject/subject6.html" class="subject">리눅스</a></td>
+            </tr>
+
+            <tr>
+                <th>10</th>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>11</th>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>12</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <th>1</th>
+                <td rowspan="2" class="highlight"><a href="./subject/subject1.html" class="subject">확률과<br>통계</a></td>
+                <td class="highlight"><a href="./subject/subject1.html" class="subject">확률과<br>통계</a></td>
+                <td rowspan="3" class="highlight"><a href="./subject/subject5.html" class="subject">선형대수</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <td></td>
+                <td rowspan="2" class="highlight"><a href="./subject/subject4.html" class="subject">지성학</a></td>
+                <td rowspan="3" class="highlight"><a href="./subject/subject7.html" class="subject">컴퓨터<br>구조</a></td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td rowspan="2" class="highlight"><a href="./subject/subject2.html" class="subject">자료구조</a></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>5</th>
+                <td></td>
+                <td class="highlight"><a href="./subject/subject2.html" class="subject">자료구조</a></td>
+            </tr>
+        </table>
+
+        <!--푸터-->
+        <div class="footer"><br>본 페이지는 웹 프로그래밍 수업 Term Project로 제작되었습니다.<br>&copy;2024 Hyun, Seo-yeon.</div>
+
+        <!--점핑별-->
+        <img src="./img/star.png" id="b1" class="jumping_star">
+        <img src="./img/star.png" id="b2" class="jumping_star">
+        <img src="./img/star.png" id="b3" class="jumping_star">
+        <img src="./img/star.png" id="b4" class="jumping_star">
+        <img src="./img/star.png" id="b5" class="jumping_star">
+        <img src="./img/star.png" id="b6" class="jumping_star">
+        <img src="./img/star.png" id="b7" class="jumping_star">
+        <img src="./img/star.png" id="b8" class="jumping_star">
+        <img src="./img/star.png" id="b9" class="jumping_star">
+        <img src="./img/star.png" id="b10" class="jumping_star">
+        <img src="./img/star.png" id="b11" class="jumping_star">
+        
+    </div>
+</body>
+</html>

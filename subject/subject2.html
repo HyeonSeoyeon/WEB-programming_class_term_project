@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자료구조</title>
+    <style>
+        body {
+            background-color: rgba(183, 238, 250, 0.6);
+            font-size: 2vw;
+        }
+    </style>
+    <script>
+        
+            answer = prompt('부모 노드의 키 값이 자식 노드의 키 값보다 항상 큰 이진 트리를 무엇이라고 하나요?(문제를 풀지 않으려면 -1입력)');
+            switch(answer) {
+                case '히프':
+                case 'heap':
+                case 'HEAP':
+                case 'Heap':
+                     document.write("정답입니다! 답은 히프"); break;
+                case '-1': break;
+                default: document.write("틀렸습니다. 정답은 히프입니다.");
+            }
+        
+    </script>
+</head>
+<body>
+    <br>
+    <button type="button" onclick="location.href='./../index.html'">홈으로 돌아가기</button>
+</body>
+</html>

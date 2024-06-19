@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>앨범 소개</title>
+    <style>
+        body {
+            color: rgba(0, 0, 0);
+            background-color: rgb(205, 174, 249);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        hr {
+            height: 3px;
+            background-color: rgba(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+
+        .album-table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+        
+        td {
+            border: 0.3vw solid rgb(0, 0, 0);
+            width: 14.28%;
+            height: 9.5vw;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.5);
+            font-size: 1.8vw;
+            padding: 0.5vw;
+        }
+
+        th {
+            border: 0.3vw solid rgb(0, 0, 0);
+            height: 5vw;
+            text-align: center;
+            position: relative;
+            font-size: 2.7vw;
+        }
+
+        .header-row {
+            background-color: black;
+            color: white;
+        }
+
+        .member-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .height {
+            height: 0vw;
+            font-size: 2vw;
+            background-color: rgba(255, 255, 255);
+            text-align: center;
+            padding: 0.5vw;
+        }
+
+        img:hover {
+            opacity: 0.2;
+        }
+
+
+
+        .video {
+            width: 83%;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 2vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1px;
+            float: right;
+            margin-top: 4vw;
+            margin-right: 8vw;
+            margin-bottom: 8vw;
+            border: 3px black solid;
+        }
+        .video-head {
+            margin: 2vw; font-size: 1.7vw;
+        }
+        
+        .bold {
+            font-weight: bold;
+
+        }
+        .hover {
+            font-size: 1vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <hr>
+
+    <table class="album-table">
+        <tr class="header-row">
+            <th colspan="6">원위 음반<span class="hover"> &nbsp;(사진에 마우스 올려 앨범명 확인)</span></th>
+        </tr>
+        <tr>
+            <td class="height">발매일</td>
+            <td class="height">앨범 자켓</td>
+            <td class="height">타이틀</td>
+            <td class="height">발매일</td>
+            <td class="height">앨범 자켓</td>
+            <td class="height">타이틀</td>
+        </tr>
+        <tr>
+            <td>2019.05.13</td>
+            <td>1/4<img class="member-img" src="https://i.namu.wiki/i/gYEGyrxGBmVzRCNaQY0cm4BnJqWi7oPkPrcaOaT-AYSTehS2SZUmukedTtYjQ4LYa9lW77Y4gbHOzZN_iZblJVRgMcUDW233E0Mx5BuBLIFsADuqEGhlVOM0urEYJnwBoFhLOPf9WWsXsE4d9iqPWQ.webp" alt="앨범1"></td>
+            <td>다 추억</td>
+            <td>2019.08.29</td>
+            <td>2/4<img class="member-img" src="https://i.namu.wiki/i/OXw24BjDye9E2jmEPvpVfJ_LrQ8w5ZqzdPUetD0GiQ2A5mJ-FBIJqoTs7nlOP0TWCJGRfafitkHJ_Qw3OAqgleJUhZIbShvgRSKzgoyalt2XfJ1MHcacwM3mTTj2Y9HjtqhPbOmdj8-oH5QET0fvLA.webp" alt="앨범2"></td>
+            <td>야행성</td>
+        </tr>
+        <tr>
+            <td>2020.04.02</td>
+            <td>3/4<img class="member-img" src="https://i.namu.wiki/i/FJ4PXzebgFMrj0K2_5vsiVumDLXc5oVrh4fvHK9bOy6KLh_NXzB-JtzeUed4NA5cD8uAHriG3G0p19T9bOLvBcL7RlG2hx4KWnClF0UI8A2YnIUxzqM9KKiZ3FpDmvEL2qiS9iOVUJv4QLeAa-z1xA.webp" alt="앨범3"></td>
+            <td>모르겠다고 (Q)</td>
+            <td>2020.05.26</td>
+            <td>ONE<img class="member-img" src="https://i.namu.wiki/i/Jwx_4IXXuGPkmZGwCIV5kL63YYW6riPO27f5Qa46LL4yTpAIarJTgzFmSI807lVGNk5wao1BTLk0X779eXIUvMVOoWWp4TXG3rIE7D5PR9snDxL5G_xNlbmSoqv6fWdll6ilns68fjN3mSkJ1cMdwA.webp" alt="앨범4"></td>
+            <td>나의 계절 봄은 끝났다</td>
+        </tr>
+        <tr>
+            <td>2020.09.24</td>
+            <td>소행성(Parting)<img class="member-img" src="https://i.namu.wiki/i/sHiGhUHJ3bnD7kSAmtWslcuH6UaXB-ydPmN8wH7vTs8dkslbYS1R1c593XfG0zV4IpJdfZmK2iktzxjDH9fIZ_b_YEOv2K-8FIBSQNyLL5eFQ0vdfNTMKXI9vFvzpsVz-mzY1MMH8m2TmusGlGGlfw.webp" alt="앨범5"></td>
+            <td>소행성</td>
+            <td>2020.12.11</td>
+            <td>MEMORY : illusion<img class="member-img" src="https://i.namu.wiki/i/iPY--D0tI2KqxbF5EQjXpByUXqqfLquvfDNlgUjKEM0lvzMyiyhsrswZTK_L_Sz9ykoY5K9thtZcHKGQ_uyIDdl6KBL3qDvVgpSSlC2YUvb-bqNLAFaoW9ViQrrvY1nmAaVg61IDq7MoE8OL4-pNpQ.webp" alt="앨범6"></td>
+            <td>기억 속 한 권의 책</td>
+        </tr>
+        <tr>
+            <td>2021.06.16</td>
+            <td>Planet Nine : Alter Ego<img class="member-img" src="https://i.namu.wiki/i/2vi2mr2WbdwcPNxBDAXlYKGaOTCqU9nfTzIJwK67qg0WyX-c09hPFWIe_pgHW1uOXJBM1oAmLD1YjsXe7tpRrr5hiAu7VDlZxSSrpQ66FGfIKv-jxZW9yxIYWC08QFTu2GGcqx2mZZfzWMoy7szo_A.webp" alt="앨범7"></td>
+            <td>비를 몰고 오는 소년</td>
+            <td>2021.11.23</td>
+            <td>별(STAR)<img class="member-img" src="https://i.namu.wiki/i/dfZ25KD3-3xD7QtH8ztRWSTBuPTYtAdZ6wYhHJWU8RPf0aDFq4tG79s67GFKQl55YiyQ0Dz0Dp-0CMDl75Y008Bzk7xqxOWmVf3cT326XTQFAjlKu7vn7t4kUt6G8IdZutx7O1q1Gu1UPZsTxQ2_JA.webp" alt="앨범8"></td>
+            <td>별</td>
+        </tr>
+        <tr>
+            <td>2022.01.04</td>
+            <td>Planet Nine : VOYAGER<img class="member-img" src="https://i.namu.wiki/i/Lw5cO8X0pPGNwq77ko7HJb_vXk84knB5eXnr1Ml2DPk0C1INl2vE1vvh7DjaQLX84OXJzASZKxv7dJR9Dl1TN96eCeyFPC6mxS_-7lyVMoSnfbia82JvSY4JctzjquIY8uXymZj8p2kC3iplvzo4RQ.webp" alt="앨범9"></td>
+            <td>너의 우주는</td>
+            <td>2022.05.20</td>
+            <td>시간을 담은 작은 방<img class="member-img" src="https://i.namu.wiki/i/jlvSaIBUMwB390pkPZ4M-8k_IZm2eGb1lUG8Z8DZ7udKNHx7v-bJAXeXE8N67vVchIz6F5WLtHNx6Sp9juKXeCjE-1nPJzWBBtnzswF6ZxkbhRaszw35UoUk-ntQ8irFGbKmrJb0frdSfIKVUIMfVQ.webp" alt="앨범10"></td>
+            <td>룸메이트</td>
+        </tr>
+        <tr>
+            <td>2022.10.04</td>
+            <td>기어이 또 (Still Here)<img class="member-img" src="https://i.namu.wiki/i/9fjlxmKMemqW6IT7lccCmRBLQ0OsuALcdklX8YlG_hh29uhPlm0sCX0jZW9TjNU9wydGM1p6aIu9BbJIVzK6qLTNmQhabKf3vLDA3C3t4B5FsDNfTZaVi6N7ZKBJrukfsvsGpH5L68peTF_PQJ1gpg.webp" alt="앨범11"></td>
+            <td>기어이 또</td>
+            <td>2023.01.28</td>
+            <td>GRAVITY<img class="member-img" src="https://i.namu.wiki/i/d6JiOiAqDF8piyvh2q9_hGh52FJJdsrMMBlU7pxXog3OSFeZ9Wz-59qg7TtoMdhCnfOB7hTmuqBwqOIeKT0S3Dz6KXxleX-1S0S1KaPnyH0A9eWcUz5BLMmBYorMhDvS919zoFJC7Cvx3JAf0risyQ.webp" alt="앨범12"></td>
+            <td>GRAVITY</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    
+
+
+
+    
+</body>
+</html>

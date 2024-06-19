@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍</title>
+    <style>
+        body {
+            background-color: rgba(183, 238, 250, 0.6);
+            font-size: 2vw;
+        }
+    </style>
+    <script>
+       for(;;) {
+            answer=prompt('웹문서에서 디자인을 담당하는 역할은 무엇입니까?(문제풀기 종료는 -1입력)');
+            if (answer=='css'||answer=='CSS'||answer=='Css') {
+                document.write("딩동댕! 정답은 CSS입니다");
+                break;
+            }
+            else if (answer=='-1') {
+                document.write("정답은 css였습니다."); break;
+            }
+            else {
+                alert('땡! 틀렸습니다. 문제를 다시 푸세요.');
+                continue;
+            }
+       }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="location.href='./../index.html'">홈으로 돌아가기</button>
+</body>
+</html>

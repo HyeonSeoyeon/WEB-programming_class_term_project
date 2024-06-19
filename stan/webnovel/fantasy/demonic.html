@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>룬의 아이들 - 웹소설 소개</title>
+    <style>
+        body {
+            color: rgb(34, 50, 58);
+            background-color: rgb(192, 212, 189);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        hr {
+            height: 3px;
+            background-color: rgba(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+
+        button {
+            position: absolute;
+            top: 2vw;
+            left: 2vw;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        section {
+            margin: 2vw 5vw;
+            padding: 1vw 3vw 1vw 3vw;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 2vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .intro {
+            margin:2vw;
+            font-size: 2vw;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .summary {
+            padding: 0vw 3vw 1vw 3vw;
+        }
+        .characters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2vw;
+        }
+        .character {
+            position: relative;
+            text-align: center;
+            width: 30%;
+        }
+        .character img {
+            width: 100%;
+            height: auto;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.3s;
+        }
+        .character .description {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 1vw;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1vw;
+            box-sizing: border-box;
+            transition: opacity 0.3s;
+        }
+        .character:hover img {
+            opacity: 0.3;
+        }
+        .character:hover .description {
+            opacity: 1;
+        }
+        .character-name {
+            margin-top: 1vw;
+            font-size: 1.5vw;
+        }
+        .favorite-character {
+            display: flex;
+            justify-content: space-around;
+            gap: 0vw;
+        }
+        .favorite-character img {
+            width: 60%;
+            height: auto;
+            border-radius: 1vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .favorite-character-details {
+            font-size: 1.7vw;
+            margin: 2vw 5vw;
+            padding: 1vw 3vw;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 2vw;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .favorite-character-details span {
+            display: block;
+            margin-bottom: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <button type="button" onclick="location.href='fantasy1.html'">돌아가기</button>
+
+    <header>
+        <h1>룬의 아이들 - 데모닉</h1>
+    </header>
+    
+    <section class="summary">
+        <p style="line-height: 3vw;">
+            <span class="intro">
+                <span class="bold" style="display: block; border-bottom: 3px solid rgba(34, 50, 58, 0.9);">소개글</span><br>
+                아르님 소공작 조슈아 폰 아르님의 이야기. 지위, 재산, 두뇌, 외모 모든 것을 가지고 태어난 조슈아. 하지만 그의 출생엔 악마의 속삭임도 함께했다. 사람들의 시기와 질투속에 점점 자아속으로 고립되던 그에게 단 한 명의 친구가 나타나는데...
+            </span>
+        </p>
+    </section>
+
+    <section class="summary">
+        <p style="line-height: 3vw;">
+            <span class="intro">
+                <span class="bold" style="display: block; border-bottom: 3px solid rgba(34, 50, 58, 0.9);">주요 등장인물</span><span style="font-weight: thin;">(사진에 마우스를 올려보세요)</span><br>
+            </span>
+        </p>
+        <div class="characters">
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FopX5b%2FbtsH1nM5SYH%2FCJGcYGgITZD4pnW65WTPDK%2Fimg.png" alt="조슈아 폰 아르님">
+                <div class="description">룬의 아이들 데모닉의 주인공. 아르님 가문의 사람들에게 격세로 나타나는 특이체질 데모닉으로 태어난 천재. 완전기억능력을 타고나며 예술, 학문 등의 모든 분야에서 절대적인 천재성과 빼어난 외모를 갖고 있다.</div>
+                <div class="character-name">조슈아 폰 아르님</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FHM0i6%2FbtsH3m0dPxu%2FhVfeLCweFirHYGJAmy9aRk%2Fimg.png" alt="막시민 리프크네">
+                <div class="description">지적인 안경과 매사에 귀찮아하는 인상이 특징인 조슈아의 친구. 조슈아처럼 천재적인 능력은 없지만 조슈아에게 없는 현실감각이 있다.</div>
+                <div class="character-name">막시민 리프크네</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbgT7kd%2FbtsH2WAG7hD%2FSgmpc0LA4m3M28duihiOQK%2Fimg.png" alt="클라리체 데 아브릴">
+                <div class="description"> 막스 카르디로 변장한 채 제2의 인생을 살아가고 있던 데모닉 조슈아의 폭풍 같은 운명에 휩쓸려 반강제적으로 함께 긴 여정에 함께하며 조슈아의 친구이자 연인 관계가 된다.</div>
+                <div class="character-name">클라리체 데 아브릴</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FG2KfA%2FbtsH3kahiyG%2FFmOIlK7UMdIFw3foGa3NM0%2Fimg.png" alt="란지에 로젠크란츠">
+                <div class="description"> 공화국을 이룩하려는 의지가 강한 혁명가. 공작가에 있는 소공작 조슈아가 가짜라는 걸 파악한다.</div>
+                <div class="character-name">란지에 로젠크란츠</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FctDKgF%2FbtsH1OQ8USm%2FCmDSsrrIBHDF74HTkccxa1%2Fimg.png" alt="켈스니티 발미아드">
+                <div class="description">아르님 가의 창시자 이카본 폰 아르님의 세 맹우 중 하나. 아주 어릴 때부터 같이 놀았던, 조슈아의 가장 친한 유령 친구.</div>
+                <div class="character-name">켈스니티 발미아드</div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbQZp9o%2FbtsH3p3ypN9%2FZQzBqoefmh0Wa4DGqdSSsk%2Fimg.png" alt="아나로즈 티카람">
+                <div class="description">조슈아 폰 아르님의 선조인 이카본 폰 아르님의 가장 소중한, 그리고 가장 중요한 역할을 한 동지 3인 중 한 명이자 연인. </div>
+                <div class="character-name">아나로즈 티카람</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="summary">
+        <p style="line-height: 3vw;">
+            <span class="intro">
+                <span class="bold" style="display: block; border-bottom: 3px solid rgba(34, 50, 58, 0.9);">내가 가장 좋아하는 캐릭터</span><br>
+                
+                </span>
+        </p>
+        <div class="favorite-character">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGDeYf%2FbtsH3meRTzj%2FsQljUL7PmmWkXToC1fyuG1%2Fimg.png" alt="이브노아 폰 아르님">
+        </div>
+        <div class="favorite-character-details">
+            <span><strong>이름</strong><br> 이브노아 폰 아르님</span>
+            <span>조슈아 폰 아르님의 누나.<br>정신연령 5세 가량의 백치이나, 왕국 3인자 서열인 아르님 가문의 하나뿐인 딸이며, 아르님 가문 자체가 손이 귀한 가문이어서인지 공주나 다름없는 대접을 받으며 성장했다.</span>
+            <span><strong>나이</strong><br> 향년 20세</span>
+            <span><strong>외모</strong><br> 긴 금발 머리와 검은 눈동자를 가진 빼어난 미녀.</span>
+            <span><strong>작중 행적</strong><br>몰락귀족인 테오스티드 다 모로와 결혼한 후 2년 뒤 이브노아의 생일 파티에서 그녀의 남편인 테오가 정치적 목적으로 조슈아를 향해 노렸던 독이 든 잔을 이브노아가 마시게 되면서 죽고 만다. 테오는 진심으로 사랑했던 아내 이브노아가 자신 때문에 죽자 절망한다. 이브노아는 후에 유령이 되어 테오 앞에 다시 등장해 자신이 어떻게 죽을 것인지 오래 전부터 알고 있었고 자신이 조슈아를 지키기 위한 존재였다고 말한다. 이브노아는 운명을 바꿀 기회가 있었지만, 동생인 조슈아를 위해 자신의 의지로 희생을 선택한 것이다. </span>
+            <span><strong>대사</strong><br>"백치도, 죽음도, 데모닉의 광기도, 다 내가 갖는다고, 너에게는 하나도 주지 않는다고."<br>"테오를 용서하니까, 그에게 안아달라고 해줘"</span>
+        </div>
+    </section>
+</body>
+</html>

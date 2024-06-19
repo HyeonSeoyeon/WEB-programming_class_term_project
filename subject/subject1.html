@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹프로그래밍</title>
+    <style>
+        body {
+            background-color: rgba(183, 238, 250, 0.6);
+            font-size: 2vw;
+        }
+    </style>
+    <script>
+        while(1) {
+            answer = Number(prompt('분산이 25일때, 표준편차를 입력하세요(문제풀기 종료는 -1입력): '));
+            if(answer==-1) {
+                document.write("답은 5였습니다.");
+                break;
+            }
+            if (answer==5) {
+                document.write("딩동댕! 답은 5입니다.");
+                break;
+            }
+            else
+                alert('땡! 틀렸습니다. 다시 입력하세요(문제풀기 종료는 -1입력)');
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="location.href='./../index.html'">홈으로 돌아가기</button>
+</body>
+</html>

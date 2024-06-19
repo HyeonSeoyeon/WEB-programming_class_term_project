@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>흑막 용을 키우게 되었다</title>
+    <style>
+        body {
+            color: rgba(34, 50, 58, 0.9);
+            padding: 0 2vw;
+            background-color: rgb(255, 226, 246);
+            font-family: 'Arial', sans-serif;
+        }
+        hr {
+            height: 3px;
+            background-color: rgba(34, 50, 58, 0.9);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 1000;
+        }
+        .title {
+            font-size: 3vw;
+            font-weight: 1000;
+            display: block;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+        .author {
+            font-size: 1.3vw;
+            font-weight: 300;
+        }
+        .box {
+            width: 8vw;
+            height: 3vw;
+            margin: 0 0.6vw;
+            background-color: #ffffff;
+            border-radius: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(34, 50, 58, 0.9);
+            font-size: 1.2vw;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            height: 3vw; 
+            overflow: hidden;
+        }
+        .train {
+            display: flex;
+            position: absolute;
+            animation: move 20s linear infinite;
+        }
+        .train2 {
+            display: flex;
+            position: absolute;
+            animation: move2 40s linear infinite 0s;
+        }
+        .train3 {
+            display: flex;
+            position: absolute;
+            animation: move3 60s linear infinite 0s;
+        }
+        .train4 {
+            display: flex;
+            position: absolute;
+            animation: move4 80s linear infinite 0s;
+        }
+        .train5 {
+            display: flex;
+            position: absolute;
+            animation: move5 100s linear infinite 0s;
+        }
+        .train6 {
+            display: flex;
+            position: absolute;
+            animation: move6 120s linear infinite 0s;
+        }
+        .train7 {
+            display: flex;
+            position: absolute;
+            animation: move7 140s linear infinite 0s;
+        }
+        @keyframes move {
+            from {
+                left: 0%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes move2 {
+            from {
+                left: -100%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes move3 {
+            from {
+                left: -200%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes move4 {
+            from {
+                left: -300%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes move5 {
+            from {
+                left: -400%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes move6 {
+            from {
+                left: -500%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes move7 {
+            from {
+                left: -600%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+        
+        .white-box {
+            width: 60%;
+            height: 30vw;
+            background-color: white;
+            margin-left: 25vw; 
+            border-radius: 10%;
+            box-shadow: 1vw 1vw 2vw rgb(246, 178, 255);
+            padding: 1.5vw;
+        }
+        .b1 {
+            overflow: auto;
+            border: 1vw double rgb(246, 178, 255);
+            background: white;
+            padding: 1vw;
+            height: 35vw; 
+        }
+        .book {
+            float: left;
+            width: 23vw;
+            margin-right:2vw;
+        }
+        iframe {
+            border: none;
+        }
+
+
+        .characters img {
+            width: 150px;
+            height: auto;
+            margin-right: 1em;
+        }
+
+        .character {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .content {
+            margin: 1em 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <hr>
+    <span class="title">흑막 용을 키우게 되었다<span class="author">&nbsp;&nbsp;&nbsp;&nbsp;작가: 달슬</span></span>
+    <h3><u>작품 키워드</u></h3>
+    <div class="container">
+        <div class="train">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+        <div class="train2">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+        <div class="train3">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+        <div class="train4">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+        <div class="train5">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+        <div class="train6">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+        <div class="train7">
+            <div class="box">#로맨틱코미디</div>
+            <div class="box">#초월적존재</div>
+            <div class="box">#까칠냉정남</div>
+            <div class="box">#베이비메신저</div>
+            <div class="box">#영혼체인지</div>
+            <div class="box">#수사관남주</div>
+            <div class="box">#뇌섹능력남</div>
+            <div class="box">#엉뚱도도녀</div>
+            <div class="box">#능력직진녀</div>
+            <div class="box">#츤데레남</div>
+        </div>
+    </div>
+    
+    <h3><u>책 소개</u></h3>
+    <div class="b1">
+        <img class="book" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FTo5jd%2FbtsH1ccK5mZ%2FioyCKJYq7jKWmMwxHqXML1%2Fimg.png">
+        <iframe src="book4.html" width=70% height="100%"></iframe>
+    </div>
+
+    <section class="characters">
+        <h3><u>주인공</u></h3>
+        <div class="content">
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FlfYek%2FbtsH0ln4bhi%2FGs6fKL1w6KvcgkY7FNeiKK%2Fimg.png" alt="남자주인공">
+                <div>
+                    <h3>카일 레너드</h3>
+                    <p>랑 제국 수사 보안국 총괄 대장. 짐승 같은 감을 지닌 유능한 수사관이다.</p>
+                </div>
+            </div>
+            <div class="character">
+                <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FVAIRt%2FbtsH0Y6TWK9%2Fj1g0fB64lKjT2HWUQsuGg1%2Fimg.png" alt="여자주인공">
+                <div>
+                    <h3>박노아</h3>
+                    <p>로사로 죽은 경험 때문에 어마어마한 귀차니즘과 무기력증을 탑재한 인물. 용과 각인한 이후 의도치 않게 매번 사건에 휘말린다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3><u>내가 좋아하는 장면</u></h3>
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FT9mAu%2FbtsH1l1BAQK%2FOM1TUle3auQt3Q9kKo1EE0%2Fimg.png" width=30%>
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0svIj%2FbtsHZTr5Fod%2FqxoYg1BR2he9zWK1fu3etK%2Fimg.png" width=30%>
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcuNZMN%2FbtsH0PhV6yb%2Fgbj2GFje8v32aHNoCcU0U1%2Fimg.png" width=30%>
+    <br><br><br><br>
+</body>
+</html>

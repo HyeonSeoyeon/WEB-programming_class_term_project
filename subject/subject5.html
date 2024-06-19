@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형대수</title>
+    <style>
+        body {
+            background-color: rgba(183, 238, 250, 0.6);
+            font-size: 2vw;
+        }
+    </style>
+    <script>
+        while(1) {
+            answer = Number(prompt('행렬A의 역행렬이 존재하려면 detA=0 이어야 한다. 맞으면 1, 틀리면 0 입력(문제풀기 종료는 -1입력): '));
+            if(answer==1) {
+                alert('땡! 틀렸습니다. 다시 입력하세요(문제풀기 종료는 -1입력)');
+                continue;
+            }
+            else if (answer==0) {
+                document.write("딩동댕! det!=0이어야 합니다.");
+                break;
+            }
+            else if(answer==-1) {
+                break;
+            }
+            else
+                alert('1또는 0또는 -1을 입력해주세요');
+                
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="location.href='./../index.html'">홈으로 돌아가기</button>
+</body>
+</html>
